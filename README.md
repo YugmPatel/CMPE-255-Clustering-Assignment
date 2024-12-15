@@ -1,124 +1,46 @@
 # CMPE-255-Clustering-Assignment
 
-## Overview
+This repository contains Colab notebooks demonstrating the capabilities of **TimeGPT**, **Tabular**, and **RelBench** for various machine learning and time series forecasting tasks.  
 
-This project involves implementing various clustering algorithms using Google Colab, accompanied by proper documentation and video explanations. The clustering methods cover a wide range of use cases and leverage both traditional approaches and advanced techniques such as LLM-based embeddings. Each assignment is submitted as an independent Colab notebook, demonstrating the implementation and quality measures of the clustering techniques.
+A single video tutorial explains the complete assignment, providing insights into each notebook's functionality and the overall workflow.  
 
----
+## Requirements  
 
-## Contents
+Before using this repository, ensure you have the following installed:  
+- Python 3.8+  
+- Google Colab (or Jupyter Notebook if running locally)  
+- GitHub CLI (optional, for easy artifact uploads)  
 
-1. **[K-Means Clustering from Scratch](#1-k-means-clustering-from-scratch)**
-2. **[Hierarchical Clustering](#2-hierarchical-clustering)**
-3. **[Gaussian Mixture Models](#3-gaussian-mixture-models)**
-4. **[DBSCAN Clustering with PyCaret](#4-dbscan-clustering-with-pycaret)**
-5. **[Anomaly Detection Using PyOD](#5-anomaly-detection-using-pyod)**
-6. **[Time-Series Clustering Using Pretrained Models](#6-time-series-clustering-using-pretrained-models)**
-7. **[Document Clustering with LLM Embeddings](#7-document-clustering-with-llm-embeddings)**
-8. **[Image Clustering Using ImageBind LLM Embeddings](#8-image-clustering-using-imagebind-llm-embeddings)**
-9. **[Audio Clustering Using ImageBind LLM Embeddings](#9-audio-clustering-using-imagebind-llm-embeddings)**
+## Notebooks Overview  
 
-Each notebook is supplemented with a detailed explanation of the algorithm, practical examples, and quality evaluation metrics.
+### TimeGPT Notebooks  
+1. **Multivariate Time Series Forecasting**  
+   - Learn to set up multivariate time series data and use TimeGPT for predictions.  
 
-## Assignments
+2. **Long-Horizon Forecasting**  
+   - Explore extended period predictions with TimeGPT.  
 
-### 1. **K-Means Clustering from Scratch**
-   - **Description:** Implements K-Means clustering algorithm from the ground up.
-   - **Key Features:** 
-     - Custom initialization of centroids.
-     - Iterative centroid updates.
-     - Elbow method to determine the optimal number of clusters.
-   - **Dataset:** Any simple dataset (e.g., Iris dataset).
-   - **Evaluation Metrics:** Inertia, Silhouette Score.
-   - **References:** 
-     - [Colab Link 1](https://colab.sandbox.google.com/github/SANTOSHMAHER/Machine-Learning-Algorithams/blob/master/K_Means_algorithm_using_Python_from_scratch_.ipynb)
-     - [Colab Link 2](https://colab.sandbox.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/05.11-K-Means.ipynb)
+3. **Fine-Tuning with Custom Data**  
+   - Fine-tune TimeGPT with your dataset for better performance.  
 
----
+4. **Anomaly Detection**  
+   - Detect anomalies in time series data using TimeGPT.  
 
-### 2. **Hierarchical Clustering**
-   - **Description:** Demonstrates agglomerative hierarchical clustering using prebuilt libraries like `scipy` and `sklearn`.
-   - **Key Features:** 
-     - Dendrogram visualization.
-     - Linkage types (single, complete, average).
-   - **Dataset:** Suitable small datasets like the Iris dataset.
-   - **Evaluation Metrics:** Cophenetic Correlation Coefficient.
-   - **References:** [Hierarchical Clustering Colab](https://colab.sandbox.google.com/github/saskeli/data-analysis-with-python-summer-2019/blob/master/clustering.ipynb)
+5. **Energy Forecasting**  
+   - Predict energy demand using TimeGPT.  
 
----
+6. **Bitcoin Price Prediction**  
+   - Forecast Bitcoin prices with TimeGPT using real-world datasets.  
 
-### 3. **Gaussian Mixture Models**
-   - **Description:** Clusters data based on Gaussian distributions using the Expectation-Maximization (EM) algorithm.
-   - **Key Features:**
-     - Comparison with K-Means.
-     - Soft clustering for probabilistic cluster assignments.
-   - **Dataset:** Iris or synthetic dataset with Gaussian clusters.
-   - **Evaluation Metrics:** Log-Likelihood, Silhouette Score.
-   - **References:** [Gaussian Mixture Models Colab](https://colab.sandbox.google.com/github/jakevdp/PythonDataScienceHandbook/blob/master/notebooks/05.12-Gaussian-Mixtures.ipynb)
+### Tabular Notebooks  
+1. **Synthetic Data Generation**  
+   - Use Tabular to create synthetic datasets with real-world distribution.  
 
----
+2. **Zero-Shot Inference**  
+   - Perform zero-shot inference with pre-trained Tabular models.  
 
-### 4. **DBSCAN Clustering with PyCaret**
-   - **Description:** Demonstrates density-based clustering using PyCaret.
-   - **Key Features:**
-     - Automated model creation and tuning.
-     - Handles noise and outliers effectively.
-   - **Dataset:** Any dataset with non-globular clusters.
-   - **Evaluation Metrics:** Number of noise points, Silhouette Score.
-   - **References:**
-     - [PyCaret Tutorial](https://towardsdatascience.com/clustering-made-easy-with-pycaret-656316c0b080)
+### RelBench Notebook  
+1. **GNN for Tabular Prediction**  
+   - Utilize RelBench to train and evaluate a Graph Neural Network (GNN) for tabular prediction tasks.  
 
----
-
-### 5. **Anomaly Detection Using PyOD**
-   - **Description:** Identifies anomalies in a univariate or multivariate dataset.
-   - **Key Features:**
-     - Uses models like Isolation Forest, One-Class SVM, or AutoEncoders.
-   - **Dataset:** Example: Network intrusion dataset.
-   - **Evaluation Metrics:** Precision, Recall, F1-Score.
-   - **References:**
-     - [Anomaly Detection Colab](https://github.com/ritvikmath/Time-Series-Analysis/blob/master/Anomaly%20Detection.ipynb)
-
----
-
-### 6. **Time-Series Clustering Using Pretrained Models**
-   - **Description:** Clusters time-series data using advanced models.
-   - **Key Features:**
-     - Time-series embeddings for clustering.
-     - Temporal similarity measures.
-   - **Dataset:** Stock market or sensor data.
-   - **Evaluation Metrics:** Dynamic Time Warping (DTW), Cluster Purity.
-   - **References:** [Time-Series Clustering Resources](https://github.com/cure-lab/Awesome-time-series)
-
----
-
-### 7. **Document Clustering with LLM Embeddings**
-   - **Description:** Clusters text documents using embeddings generated by LLMs (e.g., OpenAI, SentenceTransformers).
-   - **Key Features:**
-     - Text similarity using state-of-the-art embeddings.
-     - Dimensionality reduction (e.g., PCA/UMAP).
-   - **Dataset:** News articles or any textual dataset.
-   - **Evaluation Metrics:** Topic Coherence, Silhouette Score.
-   - **References:** [LLM Clustering](https://github.com/simonw/llm-cluster)
-
----
-
-### 8. **Image Clustering Using ImageBind LLM Embeddings**
-   - **Description:** Groups similar images based on embeddings from ImageBind by Meta AI.
-   - **Key Features:**
-     - Embedding extraction using pretrained models.
-     - Visualization of clusters.
-   - **Dataset:** CIFAR-10 or custom image dataset.
-   - **Evaluation Metrics:** Cluster Accuracy, Davies-Bouldin Index.
-   - **References:** [ImageBind Tutorial](https://medium.com/@tatsuromurata317/image-bind-metaai-on-google-colab-free-843f30a4977c)
-
----
-
-### 9. **Audio Clustering Using ImageBind LLM Embeddings**
-   - **Description:** Groups audio data using embeddings from advanced audio models.
-   - **Key Features:**
-     - Feature extraction from audio signals.
-     - Application of clustering algorithms like K-Means or DBSCAN.
-   - **Dataset:** Audio data from Kaggle or other repositories.
-   - **Evaluation Metrics:** Purity Score, Silhouette Score.
-   - **References:** [Audio Clustering Colab](https://mct-master.github.io/machine-learning/2023/04/25/ninojak-clustering-audio.html)
+**Video Tutorial:** [Youtube Video Link](https://youtu.be/0kDxVVFaPvg)  
