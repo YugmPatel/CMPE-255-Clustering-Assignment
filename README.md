@@ -9,7 +9,9 @@ A single video tutorial explains the complete assignment, providing insights int
 Before using this repository, ensure you have the following installed:  
 - Python 3.8+  
 - Google Colab (or Jupyter Notebook if running locally)  
-- GitHub CLI (optional, for easy artifact uploads)  
+- GitHub CLI (optional, for easy artifact uploads)
+
+**Video Tutorial:** [Youtube Video Link](https://youtu.be/0kDxVVFaPvg)  
 
 ## Notebooks Overview  
 
@@ -42,5 +44,3 @@ Before using this repository, ensure you have the following installed:
 ### RelBench Notebook  
 1. **GNN for Tabular Prediction**  
    - Utilize RelBench to train and evaluate a Graph Neural Network (GNN) for tabular prediction tasks.  
-
-**Video Tutorial:** [Youtube Video Link](https://youtu.be/0kDxVVFaPvg)  
